@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">International News</string>
+    <string name="app_name">World News</string>
+
+    <!-- Text to display in the list when there are no news [CHAR LIMIT=NONE] -->
+    <string name="no_news">No news articles found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Sample strings for a single news item in the item list [CHAR LIMIT=NONE] -->
+    <string name="news_title">News Title</string>
+    <string name="section">Section</string>
+    <string name="example_date">Mar. 21, 2016</string>
+
+    <!-- Date start button options [CHAR LIMIT=6] -->
+    <string name="today" translatable="false">Today</string>
+    <string name="week" translatable="false">Week</string>
+    <string name="month" translatable="false">Month</string>
+    <string name="year" translatable="false">Year</string>
+
 </resources>

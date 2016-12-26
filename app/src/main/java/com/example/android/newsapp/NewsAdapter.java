@@ -11,7 +11,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Locale;
+import java.util.TimeZone;
 
 public class NewsAdapter extends ArrayAdapter<News> {
 
@@ -60,14 +60,18 @@ public class NewsAdapter extends ArrayAdapter<News> {
     }
 
     private String formatDate(String date) {
-        Date dateObject = new Date();
-        DateFormat df = new SimpleDateFormat("LLLLL dd, yyyy", Locale.US);
+        String finalDate = null;
+        DateFormat originalFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+        originalFormat.setTimeZone(TimeZone.getTimeZone("GMT"));
         try {
-            dateObject = df.parse(date);
+            Date dateObject = originalFormat.parse(date);
+            DateFormat finalFormat = new SimpleDateFormat("LLL. dd, yyyy");
+            finalDate = finalFormat.format(dateObject);
         } catch (java.text.ParseException e) {
             System.out.println("Error formatting date.");
         }
-        return df.format(dateObject);
+
+        return finalDate;
     }
 
 }

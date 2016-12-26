@@ -154,11 +154,11 @@ public class QueryUtils {
             JSONObject baseJsonResponse = new JSONObject(newsJSON);
 
             // Look into the JSON object with key "response"
-            JSONObject responseObject = new JSONObject("response");
+            JSONObject responseObject = baseJsonResponse.getJSONObject("response");
 
             // Extract the JSONArray associated with the key called "results",
             // which represents a list of results (or news articles).
-            JSONArray resultsArray = baseJsonResponse.getJSONArray("results");
+            JSONArray resultsArray = responseObject.getJSONArray("results");
 
             // If the results array is not empty
             if (resultsArray.length() > 0) {

@@ -18,9 +18,9 @@
         android:maxLines="2"
         android:paddingBottom="8dp"
         android:paddingTop="8dp"
-        android:textColor="#212121"
+        android:textColor="@color/newsTitleTextColor"
         android:textSize="16sp"
-        tools:text="News Title" />
+        tools:text="@string/news_title" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,20 +34,19 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="#424242"
+            android:textColor="@color/defaultTextColor"
             android:textSize="12sp"
-            tools:text="Section" />
+            tools:text="@string/section" />
 
         <TextView
             android:id="@+id/news_published_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="right"
-            android:textColor="#424242"
+            android:textColor="@color/defaultTextColor"
             android:textSize="12sp"
-            tools:text="March 21, 2010" />
+            tools:text="@string/example_date" />
 
     </LinearLayout>
-
 
 </LinearLayout>

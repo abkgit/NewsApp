@@ -4,12 +4,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_paddingBottom="8dp"
-    android:layout_paddingEnd="8dp"
-    android:layout_paddingStart="8dp"
-    android:layout_paddingTop="8dp"
-    android:background="#f3e5f5"
-    android:orientation="vertical">
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingEnd="8dp"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,38 +21,38 @@
             android:id="@+id/button_today"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
-            android:background="#fff9c4"
-            android:text="Today"
-            android:textColor="#424242" />
+            android:paddingStart="2dp"
+            android:text="@string/today"
+            android:textColor="@color/defaultTextColor" />
 
         <Button
             android:id="@+id/button_week"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
-            android:background="#fff59d"
-            android:text="Week"
-            android:textColor="#424242" />
+            android:text="@string/week"
+            android:textColor="@color/defaultTextColor" />
 
         <Button
             android:id="@+id/button_month"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
-            android:background="#fff176"
-            android:text="Month"
-            android:textColor="#424242" />
+            android:text="@string/month"
+            android:textColor="@color/defaultTextColor" />
 
         <Button
             android:id="@+id/button_year"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:layout_weight="1"
-            android:background="#ffee58"
-            android:text="Year"
-            android:textColor="#424242" />
-
+            android:text="@string/year"
+            android:textColor="@color/defaultTextColor" />
 
     </LinearLayout>
 
